@@ -1,3 +1,4 @@
+// Command to print "hello world"
 package main
 
 import (
