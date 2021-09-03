@@ -4,3 +4,5 @@ services:
     build: .
     image: futureys/hello-world-golang:latest
     working_dir: /workspace
+    ports:
+      - 6060:6060
