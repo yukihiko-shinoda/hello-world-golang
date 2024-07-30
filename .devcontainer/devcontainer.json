@@ -19,19 +19,23 @@
 	// connected. This is typically a file mount in .devcontainer/docker-compose.yml
 	"workspaceFolder": "/workspace",
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": {
-		"terminal.integrated.shell.linux": null,
-		"go.lintTool":"golangci-lint",
-		"go.lintFlags": [
-		"--fast"
-		]
-	},
+	"customizations": {
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"terminal.integrated.shell.linux": null,
+				"go.lintTool":"golangci-lint",
+				"go.lintFlags": [
+				"--fast"
+				]
+			},
 
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"golang.go"
-	]
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"golang.go"
+			]
+		}
+	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
